@@ -218,6 +218,8 @@
 
 Игорь рассмеялся.
 
+![Warm Kitchen Wine Gathering.png](Warm%20Kitchen%20Wine%20Gathering.png)
+
 Смех прозвучал естественно.
 
 Это немного успокоило.
