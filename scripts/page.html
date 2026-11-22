@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#191d27">
+  <meta name="description" content="Точка невозврата — иллюстрированный рассказ о доверии, выборе и том, что нельзя вернуть.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="Иллюстрированный рассказ в девяти главах.">
+  <title>{{title}} — noreturn</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/reader.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#story">Перейти к рассказу</a>
+  <div class="reading-progress" aria-hidden="true"><span id="progress"></span></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Точка невозврата — к началу">noreturn<span>.</span></a>
+    <details class="contents" id="contents">
+      <summary>Оглавление <span class="menu-icon" aria-hidden="true"></span></summary>
+      <nav aria-label="Главы рассказа">{{navigation}}</nav>
+    </details>
+  </header>
+  <div class="cover">
+    <div class="cover-image">{{hero}}</div>
+    <div class="cover-shade"></div>
+    <div class="cover-content">
+      <p class="eyebrow">Иллюстрированный рассказ</p>
+      <h1>{{title}}</h1>
+      <p class="cover-meta">{{chapters}} глав <span aria-hidden="true">·</span> Около {{minutes}} минут чтения</p>
+      <a class="start-reading" href="#chapter-1">Начать читать</a>
+    </div>
+  </div>
+  <main id="story" class="story" aria-label="Рассказ">
+    {{body}}
+    <div class="ending"><span></span><p>Конец</p><span></span></div>
+  </main>
+  <footer class="site-footer">
+    <p>{{title}}</p>
+    <a href="#top">Вернуться к началу</a>
+  </footer>
+</body>
+</html>
